@@ -1,0 +1,671 @@
+@charset 'UTF-8';
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic");
+
+/*-------------- Starter -------------------*/
+
+body, html
+{
+    background-color: white;
+	  font-family: "Lato", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+/*-------------- Font -------------------*/
+
+@font-face
+{
+    font-family: 'Adrealine';
+    src: url('../font/TheWoodlands-Regular.otf');
+}
+
+
+/*-------------- Loader -------------------*/
+
+
+
+#loading
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-image: url('../images/Preloader_3.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container-loader
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: none;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*-------------- Hearder Video Background -------------------*/
+
+.v-header
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container
+{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+.fullscreen-video-wrap
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video
+{
+  min-height:100%;
+  min-width:100%;
+}
+
+.header-overlay
+{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+}
+
+.header-content
+{
+    z-index:2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.action
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.action h2
+{
+    padding-top: 2%;
+    font-size: 2.35em;
+    letter-spacing: 5px;
+}
+
+/*-------------- Full page -------------------*/
+
+.covervid-wrapper
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main-page
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/party-cover.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.main-page-content, .main-page-content-2
+{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifty-words
+{
+    text-align: center;
+    font-size: 1.75em;
+    line-height: 1.2em;
+}
+
+.contact-form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20% 20% 20% 20%;
+  min-height: 400px;
+  background-color: #937f8f;
+  background-image: linear-gradient(90deg, #5a6284, #937f8f);
+}
+
+.input-form
+{
+  padding-top: 10%;
+}
+
+.contact-form h1
+{
+  text-align: center;
+    line-height: 1.3em;
+}
+
+.form-control
+{
+  max-width: 600px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  outline: none;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+input
+{
+  height: 45px;
+}
+
+input::placeholder
+{
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: #FFFFFF
+}
+
+.submit
+{
+  background-color: #ee6588;
+  background-image: linear-gradient(90deg, #ee6588, #f69560);
+  border-radius: 100px;
+  border-color: transparent;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+/*-------------- Content Page -------------------*/
+
+#content-page
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#content-page > div
+{
+    display: flex;
+    height: 100%;
+    min-height: 800px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box1 h2
+{
+    -color: #740F04;
+}
+
+.box4 h2
+{
+    -color: #923906;
+}
+
+.box5 h2
+{
+    -color: #ECBDA6;
+}
+
+#content-page h2
+{
+    font-size: 2.35em;
+    width: 80%;
+    font-weight: bold;
+}
+
+#content-page h3
+{
+    font-size: 1.35em;
+    width: 60%;
+    line-height: 1.3em;
+}
+
+.logo-phone
+{
+    width: auto;
+    height: 100%;
+}
+
+/*-------------- Perspective App -------------------*/
+
+.perspective-app
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.perspective-app h2
+{
+    font-weight: bold;
+}
+
+.perspective-app img
+{
+    max-width: 100%;
+    height: auto;
+    padding: 0em 3em 1em 3em;
+    max-height: 1000px;
+}
+
+/*-------------- Row -------------------*/
+
+.row
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    padding-bottom: 10%;
+    -background: #1c1c1c;
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+}
+
+.row > div
+{
+    margin-bottom: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    padding: 1%;
+    text-align: center;
+}
+
+.row h3
+{
+    font-size: 1.6em;
+    padding-top: 1.5em;
+}
+
+.row p
+{
+    font-size: 1.2em;
+    margin-top: 1em;
+    line-height: 2em;
+    padding: 0px 1em 0px 1em;
+}
+
+.pennant {
+    font-size: 4em;
+}
+
+.fa-spotify
+{
+    color: black;
+}
+
+.fa-thumbs-up
+{
+    color: black;
+}
+
+.fa-connectdevelop
+{
+    color: black;
+}
+
+/*-------------- Footer -------------------*/
+
+#footer
+{
+    padding: 4em 0 4em 0;
+    /*background: #1c1c1c;*/
+    text-align: center;
+}
+
+#footer ul
+{
+    margin: 0 0 2em 0;
+}
+
+#footer a
+{
+    color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+
+#footer a:hover
+{
+    color: gray;
+}
+
+#footer .copyright
+{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9em;
+    margin: 0 0 0em 0;
+    padding-top: 2%;
+    color: black;
+}
+
+ul.icons
+{
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li
+{
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+ul.icons li:last-child
+{
+    padding-right: 0;
+}
+
+ul.icons li .fab:before
+{
+    font-size: 2em;
+}
+
+.fab
+{
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    text-decoration: none !important;
+}
+
+/*-------------- Media Queries -------------------*/
+
+@media(min-width:800px)
+{
+    #main-page
+    {
+        height: 100vh;
+    }
+
+     .perspective-app h2
+    {
+        padding-top: 15%;
+        font-size: 2.35em;
+    }
+
+    #content-page > div
+    {
+         min-height: 800px;
+    }
+
+    .row
+    {
+        padding-top: 10%;
+    }
+
+    .border
+    {
+      border-left: solid 1px;
+      border-left-color: black;
+    }
+
+    .fifty-words
+    {
+        padding: 5%;
+    }
+
+    .logo-phone
+    {
+      max-height: 600px;
+    }
+
+    .box1
+    {
+      background-color: #ee6588;
+      background-image: linear-gradient(90deg, #ee6588, #f69560);
+    }
+
+    .box2
+    {
+      background-color: #f69560;
+      background-image: linear-gradient(90deg, #f69560, #ee6588,);
+    }
+
+    .box3
+    {
+        background-color: #937f8f;
+        background-image: linear-gradient(90deg, #5a6284, #937f8f);
+    }
+
+    .box4
+    {
+        background-color: #937f8f;
+        background-image: linear-gradient(90deg, #937f8f, #5a6284);
+    }
+
+    .box5
+    {
+      background-color: #ee6588;
+      background-image: linear-gradient(90deg, #f69560, #ee6588);
+    }
+
+    .box6
+    {
+      background-color: #f69560;
+      background-image: linear-gradient(90deg, #ee6588, #f69560);
+    }
+
+}
+
+@media(max-width:800px)
+{
+
+    #main-page
+    {
+        flex-direction: column;
+    }
+
+    .main-page-content, .main-page-content-2
+    {
+      width: 100%;
+    }
+
+    .fifty-words
+    {
+        font-size: 1.5em;
+        line-height: 1.1em;
+        padding: 10% 5% 10% 5%;
+        text-align: center;
+    }
+
+    .action h2
+    {
+        font-size: 1.1em;
+    }
+
+    #content-page > div
+    {
+        width: 100%;
+        font-size: 1.5em;
+        min-height: 400px;
+    }
+
+    .box1
+    {
+      background-color: #ee6588;
+      background-image: linear-gradient(90deg, #ee6588, #f69560);
+    }
+
+    .box2
+    {
+      background-color: #ee6588;
+      background-image: linear-gradient(90deg, #ee6588, #f69560);
+    }
+
+    .box3
+    {
+        background-color: #937f8f;
+        background-image: linear-gradient(90deg, #937f8f, #5a6284);
+    }
+
+    .box4
+    {
+        background-color: #937f8f;
+        background-image: linear-gradient(90deg, #937f8f, #5a6284);
+    }
+
+    .box5
+    {
+      background-color: #ee6588;
+      background-image: linear-gradient(90deg, #f69560, #ee6588);
+    }
+
+    .box6
+    {
+      background-color: #ee6588;
+      background-image: linear-gradient(90deg, #f69560, #ee6588);
+    }
+
+    #content-page h2
+    {
+        line-height: 1.1em;
+        font-size: 1.5em;
+    }
+
+    #content-page h3
+    {
+        font-size: 1em;
+        width: 90%;
+        padding: 0 5% 0% 5%;
+
+    }
+
+    .logo-phone
+    {
+        max-height: 450px;
+        margin: 0% 0% 5% 0%;
+    }
+
+    .box3
+    {
+        order: 4;
+    }
+
+    .box4
+    {
+        order: 3;
+    }
+
+    .box5
+    {
+        order: 5;
+    }
+
+    .box6
+    {
+        order: 6;
+    }
+
+    .perspective-app h2
+    {
+        margin-top: 10%;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        padding: 0 5% 0 5%;
+    }
+
+    .perspective-app img
+    {
+        min-height: 600px;
+    }
+
+    .row > div
+    {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    .row
+    {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 736px)
+{
+
+    #footer
+    {
+        padding: 3em 0 1em 0;
+    }
+
+}
+
+@media(max-width:400px)
+{
+    #main-page
+    {
+        min-height: 50vh;
+    }
+
+     .fifty-words
+    {
+        line-height: 1.3em;
+        text-align: center;
+    }
+}
